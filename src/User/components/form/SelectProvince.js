@@ -20,7 +20,8 @@ const MenuProps = {
   },
 };
 
-const provinceArray = Object.values(provinces);
+let provinceArray = Object.values(provinces);
+provinceArray.unshift({ name: "NULL" });
 
 export default function SelectProvince() {
   const dispatch = useDispatch();

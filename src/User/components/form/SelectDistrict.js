@@ -30,7 +30,7 @@ export default function SelectDistrict() {
   const districtArray = districtTemp.filter(
     (district) => district.parent_code === province.code
   );
-  console.log(province);
+  districtArray.unshift({ name: "NULL" });
 
   const handleChange = (event) => {
     const {
